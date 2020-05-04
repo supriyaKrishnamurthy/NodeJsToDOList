@@ -17,10 +17,10 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 let Task = {
     active: ["go to movie", "nodejs"],
     complete: ["finish shopping"],
-    dueTime: 10, // in seconds
+    dueTime: 60, // in seconds
 }
 
-let TimeStamp = {}
+let TimeStamp = {} //dictionary to store timestamp of each element in active task
 
 Task['active'].forEach((value) => {
     TimeStamp[value] = new Date();
